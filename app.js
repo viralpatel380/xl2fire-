@@ -77,8 +77,10 @@
                     var fs = require('fs');
                     var dictstring = JSON.stringify(result);
                     fs.writeFile("jsonfile.json", dictstring);
+                    var text = this.result;
+                   // var obj = JSON.parse(text);
                     firebase.database().ref().set({
-                        Vehicle: "jsonfile.json"
+                        Vehicle: dictstring
                       });
                    
                     console.log({error_code:0,err_desc:null, data: result});
@@ -91,19 +93,17 @@
         })
        
     });
+
 //var v = this.result;
  
     //var json = this.result;
 
-	
+    
 	app.get('/',function(req,res){
 		res.sendFile(__dirname + "/index.html");
     });
     
-     firebase.database().ref().set({
-         whatever: ''
-       });
-      
+
     app.listen('3000', function(){
         console.log('running on 3000...');
     });
