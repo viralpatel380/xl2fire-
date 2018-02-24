@@ -8,6 +8,6 @@ Send Excel data to Firebase Real time Database
 npm install
 
 # serve with hot reload at localhost:3000
-node server.js
+node app.js
 ```
 > Developed By Viral Patel
