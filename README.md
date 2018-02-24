@@ -1,6 +1,13 @@
-# xl2fire
+# xl2fire 🔥
 Send Excel data to Firebase Real time Database
 
-Run this app
-# npm install
-# node app.js
+## Build Setup For Node.js
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:3000
+node server.js
+```
+> Developed By Viral Patel
