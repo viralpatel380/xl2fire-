@@ -86,7 +86,7 @@
 	                    });
 	                }
 	                res.json({
-	                    result
+	                  result
 	                });
 	                // var v = this.result;
 	               //  var fs = require('fs');
@@ -100,7 +100,7 @@
 					var jsonfile = require('jsonfile');
 					jsonfile.writeFile('jsonfile.json', result);
 					for(var i=0; i<result.length; i++){
-						console.log(i);
+				 			console.log(i);
 					
 					var chargerNov = result[i]["charger no"];
 					var chargerRatingv = result[i]["charger rating"];
@@ -201,3 +201,4 @@
 	app.listen('3000', function () {
 	    console.log('running on 3000...');
 	});
+	

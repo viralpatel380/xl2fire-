@@ -6,19 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
 
     <title>Excel To Json By Viral patel</title>
 </head>
-<body> <center>
-    <form id        =  "uploadForm"
+<body> 
+ \
+      
+    
+    <center>
+        <div class="columns">
+            <div class="column is-4 is-offset-4 is-auto">
+      
+              <div class="card" style="margin-top:30%;">
+                <div class="card-header is-centered">
+                  <h2 class="card-header-title is-centered">Add Vehicles to Database</h2>
+                </div>
+                <div class="card-content">
+    <form id   =  "uploadForm"
      enctype   =  "multipart/form-data"
      action    =  "upload"
      method    =  "post"
 >
-<input type="file" name="file"  />Upload
-<input type="submit" value="Upload" name="submit">
 
-</form></center>
+<div class="field">
+        <div class="file is-centered is-boxed is-success has-name">
+          <label class="file-label">
+                <input type="file" class="file-input" name="file"  />
+            <span class="file-cta">
+              <span class="file-icon">
+                    <i class="far fa-file-excel fa-lg "></i>
+              </span>
+              <span class="file-label">
+                Upload Excel File
+              </span>
+            </span>
+            
+          </label>
+        </div>
+      </div>
+
+
+<input type="submit" class="button is-success is-rounded" value="Upload" name="submit">
+
+</form>
+</div>
+              </div>
+            </div>
+        </div>
+        
+
+</center>
+
 </body>
 
+
 </html>
+<style>
+
+    .btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+</style>
