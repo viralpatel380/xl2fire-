@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Image</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="file/overrides.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="panel panel-default">
+                <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <a class="navbar-brand" href="emp.html">Yo Bykes</a>
+                          </div>
+                          <ul class="nav navbar-nav">
+                            <li><a href="http://127.0.0.1:3000/add">Add Vehicles</a></li>
+                            <li><a href="veh.html">Manage Vehicles</a></li>
+                            <li><a href="up.html">Add Offers</a></li>
+                            <li><a href="timeline.html">View Offers</a></li>
+                            <button class="btn btn-danger navbar-btn" onclick="logout()" href="/auth.html">Logout</button>
+                        </div>
+                      </nav>
+            <div class="row">
+                <div class="container" id="contentHolder">
+                </div>
+            </div>
+
+            <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+            <script>
+                // Initialize Firebase
+                var config = {
+		apiKey: "AIzaSyCL4ehybGdwvla03NCF7P8kyNSpZhJ_hoU",
+		authDomain: "yobykes-ssm.firebaseapp.com",
+		databaseURL: "https://yobykes-ssm.firebaseio.com",
+		projectId: "yobykes-ssm",
+		storageBucket: "yobykes-ssm.appspot.com",
+		messagingSenderId: "859108605869"
+	  };
+                firebase.initializeApp(config);
+            </script>
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <!-- Bootstrap core JavaScript
+  ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script>
+                window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+            </script>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="file/timeline.js"></script>
+            <script src="./auth/index.js"></script>
+
+</body>
+
+</html>
