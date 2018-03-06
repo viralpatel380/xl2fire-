@@ -236,7 +236,7 @@
      
 
 	app.get('/', function (req, res) {
-		res.sendFile(__dirname + "/emp.html");
+		res.sendFile(__dirname + "/index.html");
 	});
 
 
