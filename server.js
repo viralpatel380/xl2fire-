@@ -1,15 +1,13 @@
 	var express = require('express');
 	var app = express();
-	
+	var port = process.env.PORT || 3000;
 	var bodyParser = require('body-parser');
 	var multer = require('multer');
 	var xlstojson = require("xls-to-json-lc");
 	var xlsxtojson = require("xlsx-to-json-lc");
 	var firebase = require("firebase");
 	require('firebase/database');
-	app.listen(3000, () => {
-		console.log('App Successful listening on port 3000');
-	});
+	app.listen(process.env.PORT || 3000);
 	
 
 	var config = {
