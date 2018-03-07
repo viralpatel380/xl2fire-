@@ -95,8 +95,7 @@
 					//  var fs = require('fs');
 
 					
-					var jsonfile = require('jsonfile');
-					jsonfile.writeFile('jsonfile.json', result);
+			
 					for (var i = 0; i < result.length; i++) {
 						
 
