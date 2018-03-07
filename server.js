@@ -94,16 +94,11 @@
 					// var v = this.result;
 					//  var fs = require('fs');
 
-					console.log({
-						error_code: 0,
-						err_desc: null,
-						data: result
-					});
-
+					
 					var jsonfile = require('jsonfile');
 					jsonfile.writeFile('jsonfile.json', result);
 					for (var i = 0; i < result.length; i++) {
-						console.log(i);
+						
 
 						var chargerNov = result[i]["charger no"];
 						var chargerRatingv = result[i]["charger rating"];
