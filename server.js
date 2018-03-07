@@ -7,7 +7,9 @@
 	var xlsxtojson = require("xlsx-to-json-lc");
 	var firebase = require("firebase");
 	require('firebase/database');
-
+	app.listen(3000, () => {
+		console.log('App Successful listening on port 3000');
+	});
 	
 
 	var config = {
@@ -219,24 +221,24 @@
 	//var v = this.result;
 
 	//var json = this.result;
-	firebase.database().ref('/posts').on('value', function(snapshot) {
-		console.log(snapshotToArray(snapshot));
-	});
+	// firebase.database().ref('/posts').on('value', function(snapshot) {
+	// 	console.log(snapshotToArray(snapshot));
+	// });
 
-	function snapshotToArray(snapshot) {
-		var returnArr = [];
+	// function snapshotToArray(snapshot) {
+	// 	var returnArr = [];
 	
-		snapshot.forEach(function(childSnapshot) {
-			var item = childSnapshot.val();
-			item.key = childSnapshot.key;
+	// 	snapshot.forEach(function(childSnapshot) {
+	// 		var item = childSnapshot.val();
+	// 		item.key = childSnapshot.key;
 	
-			returnArr.push(item);
-		});
+	// 		returnArr.push(item);
+	// 	});
 	
-		return returnArr;
-		//console.log(returnArr);
+	// 	return returnArr;
+	// 	//console.log(returnArr);
 		
-	};
+	// };
    
 
 	app.get('/', function (req, res) {
@@ -250,7 +252,3 @@
 	});
 
 
-
-	app.listen('3000', function () {
-		console.log('running on 3000...');
-	});
