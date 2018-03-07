@@ -1,6 +1,6 @@
 	var express = require('express');
 	var app = express();
-	var port = process.env.PORT || 3000;
+	
 	var bodyParser = require('body-parser');
 	var multer = require('multer');
 	var xlstojson = require("xls-to-json-lc");
