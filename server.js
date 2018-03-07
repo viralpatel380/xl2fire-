@@ -242,13 +242,14 @@
    
 
 	app.get('/', function (req, res) {
-		res.sendFile('public/index.html' , { root : __dirname});
+	//	res.sendFile('public/index.html' , { root : __dirname});
+		res.end("app started");
 	});
 
 
 
 	app.get('/add', function (req, res) {
-		res.sendFile( "public/index.html");
+		res.sendFile('public/index.html' , { root : __dirname});
 	});
 
 
