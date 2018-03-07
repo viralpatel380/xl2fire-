@@ -6,6 +6,9 @@
 	var xlsxtojson = require("xlsx-to-json-lc");
 	var firebase = require("firebase");
 	require('firebase/database');
+
+	var port = process.env.PORT || 3000;
+
 	var config = {
 		apiKey: "AIzaSyCL4ehybGdwvla03NCF7P8kyNSpZhJ_hoU",
 		authDomain: "yobykes-ssm.firebaseapp.com",
